@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/kirmizikoyu"
+        android:gravity="center"
+        android:rotationX="10"
+        android:background="@color/sari"
+        android:text="GALATASARAY CAMİASINA ARMAĞAN OLSUN" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/kirmizikoyu"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:logo="@drawable/gs"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="99dp"
+        android:orientation="vertical" android:layout_weight="0.67">
+        <TextView
+            android:id="@+id/txtSonuc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:paddingRight="10sp"
+            android:paddingTop="5sp"
+            android:textSize="15pt"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtGirdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:gravity="right"
+            android:paddingRight="10sp"
+            android:paddingTop="5sp"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <!-- Butonlar -->
+        <Button
+            android:id="@+id/btnTemizle"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:text="Temizle"
+
+            android:backgroundTint="@color/kirmizi"
+            android:textSize="40sp"
+            android:textColor="@color/sari"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btnMod"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/sari"
+            android:textColor="@color/kirmizi"
+            android:textSize="40sp"
+            android:text="Mod" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnYedi"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="7" />
+        <Button
+            android:id="@+id/btnSekiz"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="8" />
+        <Button
+            android:id="@+id/btnDokuz"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="9" />
+        <Button
+            android:id="@+id/btnBöl"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.15"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="/" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnDört"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:text="4" />
+        <Button
+            android:id="@+id/btnBes"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="5" />
+        <Button
+            android:id="@+id/btnAlti"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="6" />
+        <Button
+            android:id="@+id/btnCarp"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight=".98"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="*" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnBir"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="1" />
+        <Button
+            android:id="@+id/btnIki"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="2" />
+        <Button
+            android:id="@+id/btnUc"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="3" />
+        <Button
+            android:id="@+id/btnEksi"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.27"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="-" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="." />
+        <Button
+            android:id="@+id/btnSifir"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight=".98"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="0" />
+        <Button
+            android:id="@+id/btnEsittir"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight=".95"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="=" />
+        <Button
+            android:id="@+id/btnArti"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight=".93"
+            android:textStyle="bold"
+            android:backgroundTint="@color/kirmizi"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:text="+" />
+    </LinearLayout>
+
+</LinearLayout>
