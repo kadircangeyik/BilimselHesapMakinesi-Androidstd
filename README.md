@@ -24,7 +24,7 @@ Uygulamayı kullanmak için şu adımları izleyebilirsiniz:
 
 ## Geliştirme
 
-Bu proje, Java ve Android Studio kullanılarak geliştirilmiştir. İlgili kodlar `MainActivity.java` dosyasında bulunabilir.
+Bu proje, Java ve Android Studio kullanılarak geliştirilmiştir. İlgili kodlar [`MainActivity.java`](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/app/src/main/java/com/example/bilimselhesapmakinesiandroidstd/MainActivity.java) dosyasında bulunabilir.
 
 ## Gereksinimler
 
