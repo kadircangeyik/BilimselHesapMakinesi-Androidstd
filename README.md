@@ -6,7 +6,7 @@ Bu Android uygulaması, basit bir bilimsel hesap makinesi işlevselliği sunar. 
 
 Uygulamayı kullanmak için şu adımları izleyebilirsiniz:
 
-1. Uygulama açıldığında, "Merhaba" başlığı altında bir hoş geldiniz ile karşılanırsınız.
+1. Uygulama açıldığında, "Bilimsel Hesap Makinesi" başlığı altında bir hoş geldiniz ile karşılanırsınız.
 
 2. Sayıları ve işlemleri girdi alanına dokunarak veya klavye simgelerine tıklayarak girin.
 
