@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <!-- Butonlar -->
+        <Button
+            android:id="@+id/btnGeri"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/kirmizikoyu"
+
+            android:text="Geri Dön"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnTürev"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Türev Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnIntegral"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="İntegral  Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnFonksiyon"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Fonksiyon Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnParabol"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Parabol Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnLogaritma"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Logaritma Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnBoyKiloIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Boy Kilo Index"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAlan"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:backgroundTint="@color/kirmizikoyu"
+            android:text="Alan Hesapla"
+            android:textColor="@color/sari"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_weight="1.22"
+            android:textStyle="bold"
+            android:backgroundTint="@color/sari"
+            android:textColor="@color/kirmizikoyu"
+            android:textSize="40sp"
+            android:text="Emeği Geçenler" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btnGithub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/sari"
+        android:contentDescription="Button"
+        android:scaleType="fitStart"
+        android:src="@drawable/githublogo" />
+
+    <TextView
+        android:id="@+id/GithubTxt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/sari"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:rotationX="10"
+        android:text="GitHub Profilim"
+        android:textColor="@color/kirmizikoyu" />
+
+    <ImageButton
+        android:id="@+id/btnLinkedin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/kirmizikoyu"
+        android:contentDescription="Button"
+        android:scaleType="fitStart"
+        android:src="@drawable/linkedinlogo" />
+
+    <TextView
+        android:id="@+id/linkedinTxt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/kirmizikoyu"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:rotationX="10"
+        android:text="GitHub Profilim"
+        android:textColor="@color/sari" />
+
+
+</LinearLayout>
+</LinearLayout>

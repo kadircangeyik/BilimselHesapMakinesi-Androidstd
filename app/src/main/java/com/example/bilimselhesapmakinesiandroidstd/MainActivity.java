@@ -1,4 +1,5 @@
 package com.example.bilimselhesapmakinesiandroidstd;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,9 +11,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    String title ="DALTONLAR", startMessage = "NESNEYE DAYALI PROGRAMLAMA DERSI PROJESI SUNAR !";
+    String title ="Bilimsel Hesap Makinesi", startMessage = "NESNEYE DAYALI PROGRAMLAMA DERSI PROJESI SUNAR !";
     TextView txtGirdi,txtSonuc;
-    Button sifir, bir, iki, uc, dort, bes, alti, yedi, sekiz, dokuz, temizle, mod, nokta, eksi, arti, bölü, carpim, esittir;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,30 +22,43 @@ public class MainActivity extends AppCompatActivity {
         showMessage(MainActivity.this, title, startMessage);
     }
     void dinleyiciler() {
-            int[] buttonIds = {R.id.btnSifir, R.id.btnBir, R.id.btnIki, R.id.btnUc, R.id.btnDört, R.id.btnBes, R.id.btnAlti,
-                    R.id.btnYedi, R.id.btnSekiz, R.id.btnDokuz, R.id.btnDecimal, R.id.btnEksi, R.id.btnArti, R.id.btnCarp,
-                    R.id.btnBöl, R.id.btnMod};
-            for (int id : buttonIds) {
-                findViewById(id).setOnClickListener(buttonClickListener);
-            }
-            findViewById(R.id.btnTemizle).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String input = txtGirdi.getText().toString();
-                    if (!input.isEmpty()) {
-                        txtGirdi.setText(input.substring(0, input.length() - 1));
-                    }
-                }
-            });
-            findViewById(R.id.btnEsittir).setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String expression = txtGirdi.getText().toString();
-                    double result = evaluateExpression(expression);
-                    txtGirdi.setText(String.valueOf(result));
-                }
-            });
+        int[] buttonIds = {R.id.btnSifir, R.id.btnBir, R.id.btnIki, R.id.btnUc, R.id.btnDört, R.id.btnBes, R.id.btnAlti,
+                R.id.btnYedi, R.id.btnSekiz, R.id.btnDokuz, R.id.btnDecimal, R.id.btnEksi, R.id.btnArti, R.id.btnCarp,
+                R.id.btnBöl, R.id.btnMod};
+        for (int id : buttonIds) {
+            findViewById(id).setOnClickListener(buttonClickListener);
         }
+        findViewById(R.id.btnTemizle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String input = txtGirdi.getText().toString();
+                if (!input.isEmpty()) {
+                    txtGirdi.setText(input.substring(0, input.length() - 1));
+                }
+            }
+        });
+        findViewById(R.id.btnEsittir).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String expression = txtGirdi.getText().toString();
+                double result = evaluateExpression(expression);
+                txtGirdi.setText(String.valueOf(result));
+            }
+        });
+        findViewById(R.id.btnMod).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // AlertDialog oluştur
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                // Layout dosyasını tanımla
+                View dialogView = getLayoutInflater().inflate(R.layout.mod_layout, null);
+                builder.setView(dialogView);
+                // AlertDialog'u göster
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+        });
+    }
         View.OnClickListener buttonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
