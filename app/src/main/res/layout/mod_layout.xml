@@ -148,7 +148,7 @@
             android:layout_weight="1.22"
             android:textStyle="bold"
             android:backgroundTint="@color/sari"
-            android:textColor="@color/kirmizikoyu"
+            android:textColor="@color/kirmizi"
             android:textSize="40sp"
             android:text="Emeği Geçenler" />
 
@@ -181,7 +181,7 @@
         android:rotationX="10"
         android:text="GitHub Profilim"
         android:textAlignment="center"
-        android:textColor="@color/kirmizikoyu"
+        android:textColor="@color/kirmizi"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -202,7 +202,7 @@
         android:id="@+id/linkedinTxt"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:background="@color/kirmizikoyu"
+        android:background="@color/kirmizi"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:rotationX="10"

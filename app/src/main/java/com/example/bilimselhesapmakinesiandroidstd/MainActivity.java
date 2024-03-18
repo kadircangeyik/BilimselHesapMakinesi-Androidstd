@@ -2,10 +2,13 @@ package com.example.bilimselhesapmakinesiandroidstd;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,11 +18,13 @@ public class MainActivity extends AppCompatActivity {
     String title = "Bilimsel Hesap Makinesi", startMessage = "NESNEYE DAYALI PROGRAMLAMA DERSI PROJESI SUNAR !";
 
     // Girilen ve sonuç metin alanları için TextView değişkenleri
-    TextView txtGirdi, txtSonuc;
+    TextView txtGirdi;
+
+    boolean tema = true;
+    private Button temaDegis;
 
     // AlertDialog değişkeni oluşturuyoruz
     AlertDialog modlarDialog;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,7 +53,50 @@ public class MainActivity extends AppCompatActivity {
                 modlarDialog.hide(); // AlertDialog'u kapat yada gizle
             }
         });
+        temaDegis = findViewById(R.id.temaDegis);
+        temaDegis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (tema) {
 
+                    // Fenerbahçe teması
+                    findViewById(R.id.toolBar).setBackgroundColor(Color.parseColor("#ffef00"));
+                    findViewById(R.id.baslik).setBackgroundColor(Color.parseColor("#002749"));
+                    ((TextView) findViewById(R.id.baslik)).setText("FENERBAHÇE CAMİASINA ARMAĞAN OLSUN");
+                    ((TextView) findViewById(R.id.baslik)).setTextColor(Color.parseColor("#ffef00"));
+                    ((ImageView) findViewById(R.id.logo)).setImageResource(R.drawable.fblogo);
+
+                    int[] buttonIds = {R.id.btnSifir, R.id.btnBir, R.id.btnIki, R.id.btnUc, R.id.btnDört, R.id.btnBes, R.id.btnAlti,
+                            R.id.btnYedi, R.id.btnSekiz, R.id.btnDokuz, R.id.btnDecimal, R.id.btnEksi, R.id.btnArti, R.id.btnCarp,
+                            R.id.btnBöl, R.id.btnMod, R.id.btnTemizle, R.id.btnEsittir};
+                    for (int id : buttonIds) {
+                        Button button = findViewById(id);
+                        button.setBackgroundColor(Color.parseColor("#002749"));
+                        button.setTextColor(Color.parseColor("#ffef00"));
+                    }
+                } else {
+
+                    // Galatasaray teması
+                    findViewById(R.id.toolBar).setBackgroundColor(Color.parseColor("#B30C28"));
+                    findViewById(R.id.baslik).setBackgroundColor(Color.parseColor("#FFCC33"));
+                    ((TextView) findViewById(R.id.baslik)).setText("GALATASARAY CAMİASINA ARMAĞAN OLSUN");
+                    ((TextView) findViewById(R.id.baslik)).setTextColor(Color.parseColor("#B30C28"));
+                    ((ImageView) findViewById(R.id.logo)).setImageResource(R.drawable.gs);
+
+
+                    int[] buttonIds = {R.id.btnSifir, R.id.btnBir, R.id.btnIki, R.id.btnUc, R.id.btnDört, R.id.btnBes, R.id.btnAlti,
+                            R.id.btnYedi, R.id.btnSekiz, R.id.btnDokuz, R.id.btnDecimal, R.id.btnEksi, R.id.btnArti, R.id.btnCarp,
+                            R.id.btnBöl, R.id.btnMod, R.id.btnTemizle, R.id.btnEsittir};
+                    for (int id : buttonIds) {
+                        Button button = findViewById(id);
+                        button.setBackgroundColor(Color.parseColor("#B30C28"));
+                        button.setTextColor(Color.parseColor("#FFCC33"));
+                    }
+                }
+                // Tema durumunu değiştir
+                tema = !tema;
+            }
+        });
         builder.setView(dialogView);
         modlarDialog = builder.create();
     }
@@ -64,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
         for (int id : buttonIds) {
             findViewById(id).setOnClickListener(buttonClickListener);
         }
-
         // Temizleme butonuna OnClickListener ekliyoruz
         findViewById(R.id.btnTemizle).setOnClickListener(new View.OnClickListener() {
             @Override
