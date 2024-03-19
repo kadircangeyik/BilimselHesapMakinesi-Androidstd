@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/kirmizi">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parabol Hesaplama"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/sari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Standart: x = ay² + by + c"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/beyaz"
+        />
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="60dp"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="a"
+        android:padding="5dp"
+        android:textColor="@color/beyaz"/>
+
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_below="@id/editTextA"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="b"
+        android:padding="5dp"
+        android:textColor="@color/beyaz"/>
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_below="@id/editTextB"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="c"
+        android:padding="5dp"
+        android:textColor="@color/beyaz"/>
+      <Button
+          android:layout_width="230dp"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/hesaplaBtn"
+          android:layout_below="@id/editTextC"
+          android:layout_marginTop="30dp"
+          android:text="Hesapla"
+          android:textStyle="bold"
+          android:textSize="22dp"
+          android:textColor="@color/kirmizi"
+          android:backgroundTint="@color/sari"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/parabolSonucTxt"
+        android:layout_below="@id/hesaplaBtn"
+        android:background="@color/sari"
+        android:textColor="@color/kirmizi"
+        android:text="SONUÇ:"
+        android:textSize="22dp"
+        />
+    <Button
+        android:id="@+id/parabolGeriDön"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/parabolSonucTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/sari"
+        android:textColor="@color/kirmizi"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="GERİ DÖN"/>
+</RelativeLayout>

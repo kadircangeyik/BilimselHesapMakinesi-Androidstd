@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-
+    android:layout_height="fill_parent"
+    android:background="@color/siyah">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="75dp"
@@ -151,68 +150,5 @@
             android:textColor="@color/kirmizi"
             android:textSize="40sp"
             android:text="Emeği Geçenler" />
-
     </LinearLayout>
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="75dp"
-    android:orientation="horizontal" >
-
-    <ImageButton
-        android:id="@+id/btnGithub"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="1dp"
-        android:background="@color/sari"
-        android:contentDescription="Button"
-        android:scaleType="fitStart"
-        android:src="@drawable/githublogo" />
-
-    <TextView
-        android:id="@+id/GithubTxt"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@color/sari"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:rotationX="10"
-        android:text="GitHub Profilim"
-        android:textAlignment="center"
-        android:textColor="@color/kirmizi"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/btnLinkedin"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="1dp"
-        android:background="@color/kirmizi"
-        android:contentDescription="Button"
-        android:scaleType="fitStart"
-        android:src="@drawable/linkedinlogo" />
-
-    <TextView
-        android:id="@+id/linkedinTxt"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:background="@color/kirmizi"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:rotationX="10"
-        android:text="GitHub Profilim"
-        android:textAlignment="center"
-        android:textColor="@color/sari"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="normal" />
-
-
-</LinearLayout>
 </LinearLayout>
