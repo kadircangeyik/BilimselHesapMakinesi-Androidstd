@@ -1,6 +1,6 @@
 # Bilimsel Hesap Makinesi Android Uygulaması
 
-Bu Android uygulaması, basit bir bilimsel hesap makinesi işlevselliği sunar. Kullanıcılar temel dört işlemi (+, -, *, /) yapabilirler ve ayrıca mod alma, parabol, integral, logartima işlemleri ve temizleme (C) işlemlerini gerçekleştirebilirler.
+Bu Android uygulaması, basit bir bilimsel hesap makinesi işlevselliği sunar. Kullanıcılar temel dört işlemi (+, -, *, /) yapabilirler ve ayrıca mod alma, parabol, integral, logaritma işlemleri ve temizleme (C) işlemlerini gerçekleştirebilirler.
 
 ## Nasıl Kullanılır
 
@@ -22,6 +22,11 @@ Uygulamayı kullanmak için şu adımları izleyebilirsiniz:
 - Hoş geldiniz iletişim kutusu
 - İşlem sonucunu hızlı bir şekilde gösterme
 
+## Ekran Görüntüleri
+
+![Ana Ekran](screenshots/ana_ekran.png)
+![Modlar Ekranı](screenshots/modlar_ekrani.png)
+
 ## Geliştirme
 
 Bu proje, Java ve Android Studio kullanılarak geliştirilmiştir. İlgili kodlar [`MainActivity.java`](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/app/src/main/java/com/example/bilimselhesapmakinesiandroidstd/MainActivity.java) dosyasında bulunabilir.
@@ -29,4 +34,3 @@ Bu proje, Java ve Android Studio kullanılarak geliştirilmiştir. İlgili kodla
 ## Gereksinimler
 
 Bu uygulamayı çalıştırmak için Android 5.0 (Lollipop) veya daha yeni bir sürüm gereklidir.
-
