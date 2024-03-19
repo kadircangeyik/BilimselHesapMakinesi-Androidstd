@@ -24,8 +24,8 @@ Uygulamayı kullanmak için şu adımları izleyebilirsiniz:
 
 ## Ekran Görüntüleri
 
-![Ana Ekran](screenshots/ana_ekran.png)
-![Modlar Ekranı](screenshots/modlar_ekrani.png)
+![Ana Ekran](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekranG%C3%B6r%C3%BCnt%C3%BCs%C3%BC1.png)
+![Modlar Ekranı](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekranG%C3%B6r%C3%BCnt%C3%BCs%C3%BC2.png)
 
 ## Geliştirme
 
