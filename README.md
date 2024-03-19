@@ -21,11 +21,12 @@ Uygulamayı kullanmak için şu adımları izleyebilirsiniz:
 - Mod alma, Parabol, İntegral, Logaritma ve temizleme (C) işlemleri
 - Hoş geldiniz iletişim kutusu
 - İşlem sonucunu hızlı bir şekilde gösterme
+- 2 Adet takımına özel tema (GS/FB)
 
 ## Ekran Görüntüleri
 
-![Ana Ekran](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekranG%C3%B6r%C3%BCnt%C3%BCs%C3%BC1.png)
-![Modlar Ekranı](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekranG%C3%B6r%C3%BCnt%C3%BCs%C3%BC2.png)
+![Tema 1 (GS)](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekranG%C3%B6r%C3%BCnt%C3%BCs%C3%BC1.png)
+![TEMA 2 (FB)](https://github.com/kadircangeyik/BilimselHesapMakinesi-Androidstd/blob/main/SS/ekrang%C3%B6r%C3%BCnt%C3%BCs%C3%BC2.png)
 
 ## Geliştirme
 
